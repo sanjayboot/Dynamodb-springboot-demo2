@@ -24,6 +24,7 @@ public class EmployeeController {
         return employeeRepository.getEmployeeById(employeeId);
     }
 
+    //Method for deleteEmployee
     @DeleteMapping("/employee/{id}")
     public String deleteEmployee(@PathVariable("id") String employeeId)
     {
